@@ -1,0 +1,11 @@
+services:
+  - type: web
+    runtime: node
+    name: coviac-asbl
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NITRO_PRESET
+        value: render-com
+      - key: HOST
+        value: 0.0.0.0
