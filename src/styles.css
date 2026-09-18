@@ -2,56 +2,76 @@
 @import "tw-animate-css";
 
 @theme {
-  --color-background: #06382b;
-  --color-foreground: #ffffff;
-  --color-card: #0a4736;
-  --color-card-foreground: #ffffff;
-  --color-popover: #0a4736;
-  --color-popover-foreground: #ffffff;
-  --color-primary: #69c979;
-  --color-primary-foreground: #06382b;
-  --color-secondary: #ffffff;
-  --color-secondary-foreground: #06382b;
-  --color-muted: #0d4a38;
-  --color-muted-foreground: #d6e4dc;
-  --color-accent: #ffffff;
-  --color-accent-foreground: #06382b;
-  --color-destructive: #d96b6b;
-  --color-border: #2a654f;
-  --color-input: #2a654f;
-  --color-ring: #69c979;
-  --color-surface: #073f30;
+  --color-background: #f8fbf9;
+  --color-foreground: #10362b;
+  --color-card: #ffffff;
+  --color-card-foreground: #10362b;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #10362b;
+  --color-primary: #02863e;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #0151b9;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #edf6f1;
+  --color-muted-foreground: #5f7169;
+  --color-accent: #eaad01;
+  --color-accent-foreground: #10362b;
+  --color-destructive: #b94141;
+  --color-border: #dce8e1;
+  --color-input: #c7d9cf;
+  --color-ring: #02863e;
+  --color-surface: #06382b;
   --color-sand: #ffffff;
-  --color-primary-soft: #15513d;
+  --color-primary-soft: #e4f3e9;
+  --color-brand-blue: #0151b9;
+  --color-brand-yellow: #eaad01;
+  --color-brand-green: #02863e;
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: #06382b;
+  background: #f8fbf9;
 }
 
 html, body, #root {
   min-height: 100%;
-  background: #06382b;
+  background: #f8fbf9;
 }
 
 body {
   margin: 0;
-  color: #ffffff;
+  color: #10362b;
 }
 
 ::selection {
-  background: #69c979;
-  color: #06382b;
+  background: #eaad01;
+  color: #10362b;
 }
 
 input, textarea, select {
-  background-color: #0a4736;
-  color: #ffffff;
-  border-color: #2a654f;
+  background-color: #ffffff;
+  color: #10362b;
+  border-color: #c7d9cf;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #a9c0b5;
+  color: #789087;
+}
+
+.container-page {
+  width: min(100% - 2rem, 1280px);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: #02863e;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.shadow-brand {
+  box-shadow: 0 20px 55px rgba(6, 56, 43, 0.16);
 }
