@@ -3,10 +3,12 @@ services:
     runtime: node
     name: coviac-asbl
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: node .output/server/index.mjs
     envVars:
       - key: NITRO_PRESET
         value: render-com
+      - key: NODE_VERSION
+        value: "24"
       - key: HOST
         value: 0.0.0.0
