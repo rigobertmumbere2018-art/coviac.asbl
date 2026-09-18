@@ -53,22 +53,11 @@ export function SiteHeader() {
             className="flex min-w-0 items-center gap-3 shrink-0"
             aria-label="Accueil COVIAC asbl"
           >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white md:h-12 md:w-12">
-              <img
-                src={logo}
-                alt=""
-                aria-hidden="true"
-                className="h-full w-full object-contain p-1"
-              />
-            </span>
-            <span className="flex min-w-0 flex-col leading-none">
-              <span className="text-[1.05rem] font-extrabold tracking-[0.08em] text-foreground md:text-xl">
-                COVIAC
-              </span>
-              <span className="mt-1 text-[0.58rem] font-semibold tracking-[0.04em] text-foreground/65 md:text-xs">
-                CONGO VISION AFRIQUE CENTRALE
-              </span>
-            </span>
+            <img
+              src={logo}
+              alt="COVIAC — Congo Vision Afrique Centrale"
+              className="h-11 w-auto max-w-[190px] object-contain md:h-14 md:max-w-[250px]"
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
