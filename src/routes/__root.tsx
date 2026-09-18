@@ -1,4 +1,4 @@
-import { createRootRoute, Outlet, Scripts, Meta, Links } from "@tanstack/react-router";
+import { createRootRoute, Outlet, HeadContent, Scripts } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
@@ -20,16 +20,21 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-background text-foreground">
-        <SiteHeader />
-        <main>
-          <Outlet />
-        </main>
-        <SiteFooter />
-      </div>
-      <Meta />
-      <Links />
-      <Scripts />
+      <html lang="fr">
+        <head>
+          <HeadContent />
+        </head>
+        <body>
+          <div className="min-h-screen bg-background text-foreground">
+            <SiteHeader />
+            <main>
+              <Outlet />
+            </main>
+            <SiteFooter />
+          </div>
+          <Scripts />
+        </body>
+      </html>
     </QueryClientProvider>
   );
 }
