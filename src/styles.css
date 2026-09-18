@@ -14,8 +14,8 @@
   --color-secondary-foreground: #ffffff;
   --color-muted: #edf6f1;
   --color-muted-foreground: #5f7169;
-  --color-accent: #eaad01;
-  --color-accent-foreground: #10362b;
+  --color-accent: #0151b9;
+  --color-accent-foreground: #ffffff;
   --color-destructive: #b94141;
   --color-border: #dce8e1;
   --color-input: #c7d9cf;
@@ -24,7 +24,7 @@
   --color-sand: #ffffff;
   --color-primary-soft: #e4f3e9;
   --color-brand-blue: #0151b9;
-  --color-brand-yellow: #eaad01;
+  --color-brand-yellow: #ffffff;
   --color-brand-green: #02863e;
 }
 
@@ -45,8 +45,8 @@ body {
 }
 
 ::selection {
-  background: #eaad01;
-  color: #10362b;
+  background: #02863e;
+  color: #ffffff;
 }
 
 input, textarea, select {
