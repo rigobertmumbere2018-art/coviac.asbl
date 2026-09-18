@@ -33,18 +33,18 @@ export function SiteFooter() {
             </li>
             <li className="flex gap-3">
               <Mail className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
-              <a href={`mailto:${CONTACT.email}`} className="hover:text-[#eaad01]">
+              <a href={`mailto:${CONTACT.email}`} className="hover:text-[#69d27b]">
                 {CONTACT.email}
               </a>
             </li>
-            <li className="flex gap-3"><span className="mt-0.5 h-4 w-4 shrink-0 text-[#eaad01]">↗</span><a href="https://www.coviac-afrique.org" target="_blank" rel="noreferrer noopener" className="hover:text-[#eaad01]">www.coviac-afrique.org</a></li>
+            <li className="flex gap-3"><span className="mt-0.5 h-4 w-4 shrink-0 text-[#69d27b]">↗</span><a href="https://www.coviac-afrique.org" target="_blank" rel="noreferrer noopener" className="hover:text-[#69d27b]">www.coviac-afrique.org</a></li>
           </ul>
         </div>
 
         <div className="md:col-span-3">
           <h3 className="text-sm font-semibold text-foreground">Explorer</h3>
           <ul className="mt-4 space-y-2 text-sm text-white/65">
-            <li><Link to="/a-propos" className="hover:text-[#eaad01]">À propos</Link></li>
+            <li><Link to="/a-propos" className="hover:text-[#69d27b]">À propos</Link></li>
             <li><Link to="/interventions" className="hover:text-primary">Nos interventions</Link></li>
             <li><Link to="/projets" className="hover:text-primary">Projets</Link></li>
             <li><Link to="/actualites" className="hover:text-primary">Actualités</Link></li>
