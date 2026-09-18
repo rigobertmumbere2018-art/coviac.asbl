@@ -50,8 +50,6 @@ function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-[#f8fbf9]">
-        <div className="absolute -right-40 -top-40 h-[520px] w-[520px] rounded-full bg-[#e4f3e9]" />
-        <div className="absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-[#edf4ff]" />
         <div className="container-page relative grid items-center gap-10 py-14 md:py-20 lg:grid-cols-12 lg:gap-14 lg:py-24">
           <div className="lg:col-span-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-[#cfe3d7] bg-white px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#02863e] shadow-sm">
@@ -89,9 +87,8 @@ function HomePage() {
           </div>
 
           <div className="relative lg:col-span-6">
-            <div className="absolute -inset-4 rounded-[2.25rem] bg-[#e4f3e9] rotate-2" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-white bg-white p-2 shadow-[0_25px_70px_rgba(6,56,43,0.16)]">
-              <div className="relative overflow-hidden rounded-[1.5rem]">
+            <div <div className="relative overflow-hidden rounded-xl border border-[#dce8e1] bg-white p-2 shadow-[0_18px_50px_rgba(6,56,43,0.13)]">
+              <div className="relative overflow-hidden rounded-lg">
                 <img
                   src={heroCommunity}
                   alt="Communauté accompagnée par COVIAC"
@@ -102,31 +99,30 @@ function HomePage() {
                   decoding="async"
                   className="aspect-[4/3] h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#06382b]/70 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-2 text-xs font-bold text-[#06382b] shadow-lg backdrop-blur">
-                    <HeartHandshake className="h-4 w-4 text-[#02863e]" />
+                <div className="absolute bottom-0 left-0 right-0 border-t border-white/20 bg-[#06382b]/88 px-5 py-3.5">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-white">
+                    <HeartHandshake className="h-4 w-4 text-[#69d27b]" />
                     Au service des communautés
                   </div>
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-[#06382b] px-5 py-4 text-white shadow-xl sm:block">
+            <div className="absolute -bottom-4 -left-4 hidden border border-[#dce8e1] bg-white px-5 py-4 text-[#06382b] shadow-lg sm:block">
               <div className="text-2xl font-extrabold">COVIAC</div>
-              <div className="mt-0.5 text-xs text-white/65">Paix · Développement · Solidarité</div>
+              <div className="mt-0.5 text-xs text-[#6b7d75]">Paix · Développement · Solidarité</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="relative z-10 -mt-2 pb-4 md:-mt-4">
+      <section className="relative z-10 pb-4">
         <div className="container-page grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p) => {
             const Icon = p.icon;
             return (
               <article
                 key={p.title}
-                className="group rounded-2xl border border-[#dce8e1] bg-white p-6 shadow-[0_12px_35px_rgba(6,56,43,0.07)] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(6,56,43,0.11)]"
+                className="group rounded-xl border border-[#dce8e1] bg-white p-6 shadow-[0_12px_35px_rgba(6,56,43,0.07)] transition hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(6,56,43,0.11)]"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#e4f3e9] text-[#02863e] transition group-hover:bg-[#02863e] group-hover:text-white">
                   <Icon className="h-5 w-5" />
@@ -195,7 +191,7 @@ function HomePage() {
           {INTERVENTIONS.map((item) => (
             <article
               key={item.slug}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-[#dce8e1] bg-white shadow-[0_8px_28px_rgba(6,56,43,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(6,56,43,0.10)]"
+              className="group flex flex-col overflow-hidden rounded-xl border border-[#dce8e1] bg-white shadow-[0_8px_28px_rgba(6,56,43,0.05)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(6,56,43,0.10)]"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-[#edf6f1]">
                 <img src={item.image} alt="" loading="lazy" width={1200} height={800} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -288,7 +284,7 @@ function HomePage() {
       </section>
 
       <section className="container-page py-20 md:py-24">
-        <div className="relative overflow-hidden rounded-[2rem] bg-[#02863e] px-7 py-12 text-white shadow-[0_22px_60px_rgba(2,134,62,0.18)] md:px-14 md:py-14">
+        <div className="relative overflow-hidden rounded-xl bg-[#02863e] px-7 py-12 text-white shadow-[0_22px_60px_rgba(2,134,62,0.18)] md:px-14 md:py-14">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full border-[50px] border-white/10" />
           <div className="absolute -bottom-32 -left-20 h-72 w-72 rounded-full bg-white/5" />
           <div className="relative z-10 grid gap-8 md:grid-cols-2 md:items-center">
