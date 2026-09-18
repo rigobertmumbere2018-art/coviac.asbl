@@ -38,7 +38,7 @@ export function SiteHeader() {
       <div className="hidden border-b border-white/10 bg-[#06382b] text-white/90 md:block">
         <div className="container-page flex min-h-10 items-center justify-between gap-6 text-xs">
           <div className="flex items-center gap-5">
-            <span className="inline-flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-[#eaad01]" /> Afrique Centrale</span>
+            <span className="inline-flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-[#02863e]" /> Commune de Goma, Q. Les Volcans · Av. Butembo N°12, en diagonale d’Ecobank · Ville de Goma, Nord-Kivu, RD Congo</span>
             <span className="inline-flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-[#eaad01]" /> office.coviac@gmail.com</span>
             <span className="inline-flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[#eaad01]" /> +243 816 606 176 · +243 994 875 398</span>
           </div>
@@ -57,7 +57,7 @@ export function SiteHeader() {
         <div className="container-page flex min-h-[78px] items-center justify-between gap-4 py-2 md:min-h-[94px]">
           <Link to="/" className="flex min-w-0 items-center gap-3 md:gap-4" aria-label="Accueil COVIAC">
             <img
-              src="/coviac-logo-white.svg"
+              src="/coviac-header.svg"
               alt="Logo COVIAC"
               className="h-14 w-14 shrink-0 object-contain md:h-[72px] md:w-[72px]"
             />
@@ -65,7 +65,7 @@ export function SiteHeader() {
               <div className="font-sans text-2xl font-extrabold leading-none tracking-tight text-[#06382b] md:text-3xl">
                 COVIAC
               </div>
-              <div className="mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#06382b]/75 sm:text-xs">
+              <div className="mt-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#06382b]/80 sm:text-xs">
                 Congo Vision Afrique Centrale
               </div>
               <div className="mt-0.5 hidden text-[10px] font-medium italic text-[#02863e] sm:block">
@@ -87,7 +87,7 @@ export function SiteHeader() {
                   )}
                 >
                   {item.label}
-                  {active && <span className="absolute inset-x-3 bottom-1 h-0.5 rounded-full bg-[#eaad01]" />}
+                  {active && <span className="absolute inset-x-3 bottom-1 h-0.5 rounded-full bg-[#02863e]" />}
                 </Link>
               );
             })}
