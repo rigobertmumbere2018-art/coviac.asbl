@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/coviac-logo-mark.webp";
 
-
 const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/a-propos", label: "À propos" },
@@ -40,66 +39,68 @@ export function SiteHeader() {
     };
   }, [open]);
 
-
   return (
     <>
-    <header
-      className={cn(
-        "sticky top-0 z-50 w-full border-b border-transparent bg-background/80 backdrop-blur transition-colors",
-        scrolled && "border-border bg-background/95 shadow-[0_1px_0_0_var(--color-border)]",
-      )}
-    >
-      <div className="container-page flex h-16 items-center justify-between gap-6 md:h-20">
-        <Link to="/" className="flex items-center shrink-0" aria-label="Accueil COVIAC asbl">
-          <img
-            src={logo}
-            alt="COVIAC asbl — Congo Vision Afrique Centrale"
-            className="h-10 md:h-12 w-auto"
-          />
-        </Link>
-
-
-        <nav className="hidden lg:flex items-center gap-1">
-          {NAV.map((item) => {
-            const active =
-              item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
-            return (
-              <Link
-                key={item.to}
-                to={item.to}
-                className={cn(
-                  "relative rounded-md px-3 py-2 text-sm font-medium text-foreground/75 transition-colors hover:text-foreground",
-                  active && "text-primary",
-                )}
-              >
-                {item.label}
-                {active && (
-                  <span className="pointer-events-none absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-primary" />
-                )}
-              </Link>
-            );
-          })}
-        </nav>
-
-        <div className="flex items-center gap-2">
+      <header
+        className={cn(
+          "sticky top-0 z-50 w-full border-b border-transparent bg-background/80 backdrop-blur transition-colors",
+          scrolled && "border-border bg-background/95 shadow-[0_1px_0_0_var(--color-border)]",
+        )}
+      >
+        <div className="container-page flex h-16 items-center justify-between gap-4 md:h-20">
           <Link
-            to="/don"
-            className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+            to="/"
+            className="flex h-12 min-w-0 max-w-[190px] items-center shrink-0 md:h-14 md:max-w-[240px]"
+            aria-label="Accueil COVIAC asbl"
           >
-            Faire un don
+            <img
+              src={logo}
+              alt="COVIAC asbl — Congo Vision Afrique Centrale"
+              className="block h-full w-auto max-w-full object-contain object-left"
+            />
           </Link>
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md text-foreground lg:hidden hover:bg-muted"
-            aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
-            aria-expanded={open}
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
+
+          <nav className="hidden lg:flex items-center gap-1">
+            {NAV.map((item) => {
+              const active =
+                item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
+              return (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className={cn(
+                    "relative rounded-md px-3 py-2 text-sm font-medium text-foreground/75 transition-colors hover:text-foreground",
+                    active && "text-primary",
+                  )}
+                >
+                  {item.label}
+                  {active && (
+                    <span className="pointer-events-none absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-primary" />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              to="/don"
+              className="hidden sm:inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+            >
+              Faire un don
+            </Link>
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md text-foreground lg:hidden hover:bg-muted"
+              aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-expanded={open}
+            >
+              {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
       {open && (
         <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto border-t border-border bg-background">
@@ -132,4 +133,3 @@ export function SiteHeader() {
     </>
   );
 }
-
