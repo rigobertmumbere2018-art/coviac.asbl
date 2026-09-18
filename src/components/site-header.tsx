@@ -50,14 +50,25 @@ export function SiteHeader() {
         <div className="container-page flex h-16 items-center justify-between gap-4 md:h-20">
           <Link
             to="/"
-            className="flex h-12 min-w-0 max-w-[190px] items-center shrink-0 md:h-14 md:max-w-[240px]"
+            className="flex min-w-0 items-center gap-3 shrink-0"
             aria-label="Accueil COVIAC asbl"
           >
-            <img
-              src={logo}
-              alt="COVIAC asbl — Congo Vision Afrique Centrale"
-              className="block h-full w-auto max-w-full object-contain object-left"
-            />
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white md:h-12 md:w-12">
+              <img
+                src={logo}
+                alt=""
+                aria-hidden="true"
+                className="h-full w-full object-contain p-1"
+              />
+            </span>
+            <span className="flex min-w-0 flex-col leading-none">
+              <span className="text-[1.05rem] font-extrabold tracking-[0.08em] text-foreground md:text-xl">
+                COVIAC
+              </span>
+              <span className="mt-1 text-[0.58rem] font-semibold tracking-[0.04em] text-foreground/65 md:text-xs">
+                CONGO VISION AFRIQUE CENTRALE
+              </span>
+            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
