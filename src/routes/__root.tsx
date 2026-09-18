@@ -12,8 +12,8 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
     links: [
-      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "shortcut icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/coviac-logo-transparent.svg", type: "image/svg+xml" },
+      { rel: "shortcut icon", href: "/coviac-logo-transparent.svg", type: "image/svg+xml" },
     ],
   }),
   component: RootComponent,
