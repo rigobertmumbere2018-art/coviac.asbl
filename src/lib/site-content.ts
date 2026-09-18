@@ -215,27 +215,31 @@ export const VALUES = [
 export const FAQS = [
   {
     q: "Qui est COVIAC ?",
-    a: "COVIAC asbl — Congo Vision Afrique Centrale — est une organisation chrétienne de développement durable, de protection et de paix. Nous accompagnons les communautés vulnérables en République Démocratique du Congo et en Afrique Centrale.",
+    a: "COVIAC asbl — Congo Vision Afrique Centrale — est une organisation chrétienne à but non lucratif engagée dans le développement durable, la protection, la paix et la solidarité. Elle accompagne les communautés vulnérables à travers des interventions humanitaires et de développement.",
   },
   {
-    q: "Comment devenir partenaire ?",
-    a: "Écrivez-nous à partenariat@coviac.org avec une brève présentation de votre organisation et de la coopération envisagée. Notre équipe reviendra vers vous sous 10 jours ouvrables.",
+    q: "Où intervient COVIAC ?",
+    a: "COVIAC intervient principalement dans six provinces de la République Démocratique du Congo : Nord-Kivu, Sud-Kivu, Ituri, Tanganyika, Kasaï et Kinshasa. Son siège est situé à Goma, dans la province du Nord-Kivu.",
   },
   {
-    q: "Comment faire un don ?",
-    a: "Vous pouvez soutenir nos actions via Mobile Money (Orange Money, Airtel Money, M-Pesa) ou par virement bancaire. Rendez-vous sur la page « Faire un don » pour les coordonnées.",
+    q: "Quels sont les domaines d'intervention de COVIAC ?",
+    a: "COVIAC intervient notamment dans la protection de l'enfance, la protection et l'autonomisation de la femme, la santé, l'eau-hygiène-assainissement, la protection de l'environnement, le relèvement communautaire, la cohésion sociale et la paix, ainsi que la communication communautaire.",
   },
   {
-    q: "Comment postuler à une offre d'emploi ?",
-    a: "Nos offres sont publiées sur la page Actualités. Envoyez votre candidature (CV + lettre) à recrutement@coviac.org en précisant l'intitulé du poste.",
+    q: "Comment devenir partenaire de COVIAC ?",
+    a: "Pour proposer un partenariat ou une collaboration, contactez directement COVIAC à l'adresse office.coviac@gmail.com en présentant brièvement votre organisation, votre proposition et les objectifs de la collaboration.",
   },
   {
-    q: "Dans quelles provinces intervenez-vous ?",
-    a: "Nous opérons principalement au Nord-Kivu, Sud-Kivu, Ituri, Tanganyika, Kasaï et à Kinshasa. Notre siège se trouve à Goma.",
+    q: "Comment soutenir les actions de COVIAC ?",
+    a: "Vous pouvez soutenir COVIAC en contribuant à ses actions, en devenant partenaire ou en utilisant les moyens de don indiqués sur la page « Faire un don ». Pour obtenir les coordonnées de paiement à jour, contactez directement le bureau de COVIAC.",
   },
   {
     q: "Comment contacter COVIAC ?",
-    a: "Par téléphone au +243 000 000 000, par email à contact@coviac.org, ou en remplissant le formulaire de la page Contact.",
+    a: "Vous pouvez contacter COVIAC au +243 816 606 176 ou au +243 994 875 398, par email à office.coviac@gmail.com, ou via le formulaire de la page Contact. Le bureau est situé à la Commune de Goma, quartier Les Volcans, Av. Butembo N°12, en diagonale d'Ecobank, Ville de Goma, Nord-Kivu, RD Congo.",
+  },
+  {
+    q: "Comment postuler à une opportunité au sein de COVIAC ?",
+    a: "Les opportunités et informations de recrutement sont publiées par COVIAC sur ses canaux de communication. Pour toute demande, utilisez l'adresse office.coviac@gmail.com afin d'obtenir les informations à jour sur les postes et modalités de candidature.",
   },
 ];
 
