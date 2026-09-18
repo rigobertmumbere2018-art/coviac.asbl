@@ -271,9 +271,10 @@ export const PUBLICATIONS = [
 ];
 
 export const CONTACT = {
-  address: "Avenue Rond-Point Signers, Quartier Les Volcans, Goma — Nord-Kivu, RDC",
-  phones: ["+243 000 000 000", "+243 000 000 001"],
-  email: "contact@coviac.org",
+  address: "Commune de Goma, Q. Les Volcans — Av. Butembo, N°12, En Diagonal de Ecobank — Ville de Goma, Nord-Kivu, RD Congo",
+  phones: ["+243 816 606 176", "+243 994 875 398"],
+  email: "office.coviac@gmail.com",
+  website: "www.coviac-afrique.org",
   hours: "Lundi – Vendredi · 08h00 – 17h00",
   socials: [
     { name: "Facebook", href: "https://www.facebook.com/coviac" },
