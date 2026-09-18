@@ -2,6 +2,7 @@ services:
   - type: web
     runtime: node
     name: coviac-asbl
+    plan: free
     buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
