@@ -39,8 +39,8 @@ export function SiteHeader() {
         <div className="container-page flex min-h-10 items-center justify-between gap-6 text-xs">
           <div className="flex items-center gap-5">
             <span className="inline-flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-[#02863e]" /> Commune de Goma, Q. Les Volcans · Av. Butembo N°12, en diagonale d’Ecobank · Ville de Goma, Nord-Kivu, RD Congo</span>
-            <span className="inline-flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-[#eaad01]" /> office.coviac@gmail.com</span>
-            <span className="inline-flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[#eaad01]" /> +243 816 606 176 · +243 994 875 398</span>
+            <span className="inline-flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-white" /> office.coviac@gmail.com</span>
+            <span className="inline-flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-white" /> +243 816 606 176 · +243 994 875 398</span>
           </div>
           <a href="https://www.coviac-afrique.org" target="_blank" rel="noreferrer noopener" className="font-medium hover:text-white">
             www.coviac-afrique.org
@@ -59,7 +59,7 @@ export function SiteHeader() {
             <img
               src="/coviac-header.svg"
               alt="Logo COVIAC"
-              className="h-14 w-14 shrink-0 object-contain md:h-[72px] md:w-[72px]"
+              className="h-16 w-16 shrink-0 object-contain md:h-[82px] md:w-[82px]"
             />
             <div className="min-w-0">
               <div className="font-sans text-2xl font-extrabold leading-none tracking-tight text-[#06382b] md:text-3xl">
@@ -140,9 +140,9 @@ export function SiteHeader() {
               Faire un don
             </Link>
             <div className="mt-5 space-y-2 border-t border-[#dce8e1] pt-5 text-sm text-[#10362b]/70">
-              <p><MapPin className="mr-2 inline h-4 w-4 text-[#eaad01]" />Commune de Goma, Q. Les Volcans</p>
-              <p><Mail className="mr-2 inline h-4 w-4 text-[#eaad01]" />office.coviac@gmail.com</p>
-              <p><Phone className="mr-2 inline h-4 w-4 text-[#eaad01]" />+243 816 606 176 · +243 994 875 398</p>
+              <p><MapPin className="mr-2 inline h-4 w-4 text-[#02863e]" />Commune de Goma, Q. Les Volcans<br />Av. Butembo, N°12, en Diagonal de Ecobank<br />Ville de Goma, Nord-Kivu, RD Congo</p>
+              <p><Mail className="mr-2 inline h-4 w-4 text-[#02863e]" />office.coviac@gmail.com</p>
+              <p><Phone className="mr-2 inline h-4 w-4 text-[#02863e]" />+243 816 606 176 · +243 994 875 398</p><p><span className="font-semibold">Site :</span> www.coviac-afrique.org</p>
             </div>
           </nav>
         </div>
