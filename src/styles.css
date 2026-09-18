@@ -2,56 +2,56 @@
 @import "tw-animate-css";
 
 @theme {
-  --color-background: #062b20;
-  --color-foreground: #f4f7f3;
-  --color-card: #0b3a2b;
-  --color-card-foreground: #f4f7f3;
-  --color-popover: #0b3a2b;
-  --color-popover-foreground: #f4f7f3;
-  --color-primary: #68c77a;
-  --color-primary-foreground: #062b20;
-  --color-secondary: #123f30;
-  --color-secondary-foreground: #eaf3ed;
-  --color-muted: #10382b;
-  --color-muted-foreground: #c4d2ca;
-  --color-accent: #1a4d39;
-  --color-accent-foreground: #f4f7f3;
+  --color-background: #06382b;
+  --color-foreground: #ffffff;
+  --color-card: #0a4736;
+  --color-card-foreground: #ffffff;
+  --color-popover: #0a4736;
+  --color-popover-foreground: #ffffff;
+  --color-primary: #69c979;
+  --color-primary-foreground: #06382b;
+  --color-secondary: #ffffff;
+  --color-secondary-foreground: #06382b;
+  --color-muted: #0d4a38;
+  --color-muted-foreground: #d6e4dc;
+  --color-accent: #ffffff;
+  --color-accent-foreground: #06382b;
   --color-destructive: #d96b6b;
-  --color-border: #285743;
-  --color-input: #285743;
-  --color-ring: #68c77a;
-  --color-surface: #073225;
-  --color-sand: #123f30;
-  --color-primary-soft: #164b37;
+  --color-border: #2a654f;
+  --color-input: #2a654f;
+  --color-ring: #69c979;
+  --color-surface: #073f30;
+  --color-sand: #ffffff;
+  --color-primary-soft: #15513d;
 }
 
 :root {
   color-scheme: dark;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: #062b20;
+  background: #06382b;
 }
 
 html, body, #root {
   min-height: 100%;
-  background: #062b20;
+  background: #06382b;
 }
 
 body {
   margin: 0;
-  color: #f4f7f3;
+  color: #ffffff;
 }
 
 ::selection {
-  background: #68c77a;
-  color: #062b20;
+  background: #69c979;
+  color: #06382b;
 }
 
 input, textarea, select {
-  background-color: #0b3a2b;
-  color: #f4f7f3;
-  border-color: #285743;
+  background-color: #0a4736;
+  color: #ffffff;
+  border-color: #2a654f;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #9eb2a7;
+  color: #a9c0b5;
 }
