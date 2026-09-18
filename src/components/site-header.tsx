@@ -2,7 +2,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/coviac-logo-mark.webp";
 
 const NAV = [
   { to: "/", label: "Accueil" },
@@ -54,7 +53,7 @@ export function SiteHeader() {
             aria-label="Accueil COVIAC asbl"
           >
             <img
-              src={logo}
+              src="/coviac-header.webp"
               alt="COVIAC — Congo Vision Afrique Centrale"
               className="h-11 w-auto max-w-[190px] object-contain md:h-14 md:max-w-[250px]"
             />
