@@ -1,5 +1,4 @@
 import { createRootRoute, Outlet, Scripts, Meta, Links } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
@@ -28,7 +27,6 @@ function RootComponent() {
         </main>
         <SiteFooter />
       </div>
-      <TanStackRouterDevtools position="bottom-right" />
       <Meta />
       <Links />
       <Scripts />
