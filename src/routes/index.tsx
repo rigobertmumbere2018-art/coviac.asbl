@@ -52,10 +52,7 @@ function HomePage() {
       <section className="relative overflow-hidden bg-[#f8fbf9]">
         <div className="container-page relative grid items-center gap-10 py-14 md:py-20 lg:grid-cols-12 lg:gap-14 lg:py-24">
           <div className="lg:col-span-6">
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#cfe3d7] bg-white px-3.5 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#02863e] shadow-sm">
-              <span className="h-2 w-2 rounded-full bg-[#02863e]" />
-              Congo Vision Afrique Centrale
-            </div>
+            <p className="eyebrow">Congo Vision Afrique Centrale</p>
             <h1 className="mt-6 max-w-2xl text-4xl font-extrabold leading-[1.04] tracking-[-0.035em] text-[#06382b] sm:text-5xl lg:text-[4.25rem]">
               Agir aujourd'hui.
               <span className="block text-[#02863e]">Construire demain.</span>
@@ -68,13 +65,13 @@ function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/interventions"
-                className="inline-flex items-center gap-2 rounded-full bg-[#02863e] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(2,134,62,0.22)] transition hover:-translate-y-0.5 hover:bg-[#026f35]"
+                className="inline-flex items-center gap-2 rounded-md bg-[#02863e] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_25px_rgba(2,134,62,0.22)] transition hover:-translate-y-0.5 hover:bg-[#026f35]"
               >
                 Découvrir nos actions <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/a-propos"
-                className="inline-flex items-center gap-2 rounded-full border border-[#cfe3d7] bg-white px-6 py-3.5 text-sm font-bold text-[#10362b] transition hover:border-[#02863e] hover:text-[#02863e]"
+                className="inline-flex items-center gap-2 rounded-md border border-[#cfe3d7] bg-white px-6 py-3.5 text-sm font-bold text-[#10362b] transition hover:border-[#02863e] hover:text-[#02863e]"
               >
                 Qui sommes-nous ?
               </Link>
@@ -87,7 +84,7 @@ function HomePage() {
           </div>
 
           <div className="relative lg:col-span-6">
-            <div <div className="relative overflow-hidden rounded-xl border border-[#dce8e1] bg-white p-2 shadow-[0_18px_50px_rgba(6,56,43,0.13)]">
+            <div className="relative overflow-hidden rounded-xl border border-[#dce8e1] bg-white p-2 shadow-[0_18px_50px_rgba(6,56,43,0.13)]">
               <div className="relative overflow-hidden rounded-lg">
                 <img
                   src={heroCommunity}
