@@ -1,14 +1,12 @@
 services:
   - type: web
-    runtime: node
+    runtime: bun
     name: coviac-asbl
     plan: free
-    buildCommand: npm install --include=dev && npm run build
-    startCommand: node .output/server/index.mjs
+    buildCommand: bun install --frozen-lockfile && bun run build
+    startCommand: bun run start
     envVars:
       - key: NITRO_PRESET
         value: render-com
-      - key: NODE_VERSION
-        value: "24"
       - key: HOST
         value: 0.0.0.0
