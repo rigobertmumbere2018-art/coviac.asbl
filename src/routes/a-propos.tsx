@@ -23,7 +23,7 @@ export const Route = createFileRoute("/a-propos")({
 function AboutPage() {
   return (
     <>
-      <section className="border-b border-border bg-surface">
+      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">À propos</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
