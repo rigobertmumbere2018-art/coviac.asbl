@@ -57,7 +57,7 @@ export function SiteHeader() {
 
       <header
         className={cn(
-          "sticky top-0 z-50 w-full border-b border-[#dce8e1]/90 bg-white/95 backdrop-blur-xl transition-all",
+          "sticky top-0 z-50 w-full border-b border-[#25483b]/90 bg-[#102f25]/95 backdrop-blur-xl transition-all",
           scrolled && "shadow-[0_10px_35px_rgba(6,56,43,0.10)]",
         )}
       >
@@ -69,10 +69,10 @@ export function SiteHeader() {
               className="h-[58px] w-[58px] shrink-0 object-contain md:h-[70px] md:w-[70px]"
             />
             <div className="min-w-0">
-              <div className="text-[1.55rem] font-extrabold leading-none tracking-[-0.04em] text-[#06382b] md:text-[1.8rem]">
+              <div className="text-[1.55rem] font-extrabold leading-none tracking-[-0.04em] text-[#edf7f1] md:text-[1.8rem]">
                 COVIAC
               </div>
-              <div className="mt-1 whitespace-nowrap text-[9px] font-extrabold uppercase tracking-[0.09em] text-[#10362b]/75 sm:text-[10px]">
+              <div className="mt-1 whitespace-nowrap text-[9px] font-extrabold uppercase tracking-[0.09em] text-[#edf7f1]/75 sm:text-[10px]">
                 Congo Vision Afrique Centrale
               </div>
               <div className="mt-0.5 hidden text-[9px] font-semibold text-[#02863e] sm:block">
@@ -81,7 +81,7 @@ export function SiteHeader() {
             </div>
           </Link>
 
-          <nav className="hidden xl:flex items-center gap-1 rounded-full border border-[#dce8e1] bg-[#f8fbf9] p-1">
+          <nav className="hidden xl:flex items-center gap-1 rounded-full border border-[#25483b] bg-[#071b15] p-1">
             {NAV.map((item) => {
               const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
               return (
@@ -89,8 +89,8 @@ export function SiteHeader() {
                   key={item.to}
                   to={item.to}
                   className={cn(
-                    "rounded-full px-3 py-2 text-[13px] font-bold text-[#10362b]/75 transition-all hover:bg-white hover:text-[#02863e]",
-                    active && "bg-white text-[#02863e] shadow-sm",
+                    "rounded-full px-3 py-2 text-[13px] font-bold text-[#edf7f1]/75 transition-all hover:bg-[#102f25] hover:text-[#02863e]",
+                    active && "bg-[#102f25] text-[#02863e] shadow-sm",
                   )}
                 >
                   {item.label}
@@ -110,7 +110,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#dce8e1] bg-white text-[#06382b] transition hover:border-[#02863e] hover:bg-[#edf6f1] xl:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-[#25483b] bg-[#102f25] text-[#edf7f1] transition hover:border-[#02863e] hover:bg-[#143b2d] xl:hidden"
               aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={open}
             >
@@ -121,7 +121,7 @@ export function SiteHeader() {
       </header>
 
       {open && (
-        <div className="fixed inset-x-0 top-[76px] bottom-0 z-40 overflow-y-auto border-t border-[#dce8e1] bg-white xl:hidden">
+        <div className="fixed inset-x-0 top-[76px] bottom-0 z-40 overflow-y-auto border-t border-[#25483b] bg-[#102f25] xl:hidden">
           <nav className="container-page flex flex-col gap-1 py-5">
             {NAV.map((item) => {
               const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
@@ -130,8 +130,8 @@ export function SiteHeader() {
                   key={item.to}
                   to={item.to}
                   className={cn(
-                    "rounded-xl px-4 py-3.5 text-base font-semibold text-[#10362b]/80",
-                    active && "bg-[#edf6f1] text-[#02863e]",
+                    "rounded-xl px-4 py-3.5 text-base font-semibold text-[#edf7f1]/80",
+                    active && "bg-[#143b2d] text-[#02863e]",
                   )}
                 >
                   {item.label}
@@ -145,7 +145,7 @@ export function SiteHeader() {
               <HeartHandshake className="h-4 w-4" />
               Faire un don
             </Link>
-            <div className="mt-5 space-y-2 border-t border-[#dce8e1] pt-5 text-sm leading-6 text-[#10362b]/70">
+            <div className="mt-5 space-y-2 border-t border-[#25483b] pt-5 text-sm leading-6 text-[#edf7f1]/70">
               <p><MapPin className="mr-2 inline h-4 w-4 text-[#02863e]" />Commune de Goma, Q. Les Volcans<br />Av. Butembo, N°12, en Diagonal de Ecobank<br />Ville de Goma, Nord-Kivu, RD Congo</p>
               <p><Mail className="mr-2 inline h-4 w-4 text-[#02863e]" />office.coviac@gmail.com</p>
               <p><Phone className="mr-2 inline h-4 w-4 text-[#02863e]" />+243 816 606 176 · +243 994 875 398</p>
