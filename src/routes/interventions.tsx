@@ -20,13 +20,13 @@ export const Route = createFileRoute("/interventions")({
 function InterventionsPage() {
   return (
     <>
-      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
+      <section className="border-b border-[#25483b] bg-[#071b15]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">Interventions</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Huit domaines pour répondre aux besoins essentiels des communautés.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             De la protection à la paix, en passant par la santé et l'environnement —
             découvrez comment COVIAC agit sur le terrain.
           </p>
@@ -63,7 +63,7 @@ function InterventionsPage() {
                 <h2 className="font-serif text-3xl leading-tight md:text-4xl">
                   {item.title}
                 </h2>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                <p className="mt-4 text-lg leading-relaxed text-[#a8bdb3]">
                   {item.description}
                 </p>
                 <Link
