@@ -25,13 +25,13 @@ export const Route = createFileRoute("/faq")({
 function FaqPage() {
   return (
     <>
-      <section className="border-b border-border bg-surface">
+      <section className="border-b border-[#25483b] bg-surface">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">FAQ</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Questions fréquentes
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             Vous trouverez ici les réponses aux questions les plus courantes.
           </p>
         </div>
@@ -45,7 +45,7 @@ function FaqPage() {
                 <AccordionTrigger className="text-left font-serif text-lg">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-base leading-relaxed text-muted-foreground">
+                <AccordionContent className="text-base leading-relaxed text-[#a8bdb3]">
                   {item.a}
                 </AccordionContent>
               </AccordionItem>
