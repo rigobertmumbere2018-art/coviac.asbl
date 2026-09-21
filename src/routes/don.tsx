@@ -27,13 +27,13 @@ function DonatePage() {
   };
   return (
     <>
-      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
+      <section className="border-b border-[#25483b] bg-[#071b15]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">Faire un don</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Votre don protège, soigne, éduque et reconstruit.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             Chaque contribution finance directement nos programmes de protection, de
             santé, d'accès à l'eau et de paix en Afrique Centrale. Nous vous rendons
             compte de l'usage de vos dons dans notre rapport annuel.
@@ -49,7 +49,7 @@ function DonatePage() {
             return (
               <div
                 key={m.name}
-                className="rounded-2xl border border-border bg-card p-8 shadow-[var(--shadow-card)]"
+                className="rounded-2xl border border-[#25483b] bg-[#102f25] p-8 shadow-[var(--shadow-card)]"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary-soft text-primary">
@@ -57,23 +57,23 @@ function DonatePage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <h2 className="font-serif text-xl">{m.name}</h2>
-                    <p className="mt-3 text-xs uppercase tracking-widest text-muted-foreground">
+                    <p className="mt-3 text-xs uppercase tracking-widest text-[#a8bdb3]">
                       Numéro / IBAN
                     </p>
                     <div className="mt-1 flex items-center gap-2">
-                      <p className="font-mono text-base font-semibold text-foreground">
+                      <p className="font-mono text-base font-semibold text-[#edf7f1]">
                         {m.number}
                       </p>
                       <button
                         onClick={() => copy(m.number)}
-                        className="inline-flex h-8 items-center gap-1 rounded-md border border-border px-2 text-xs hover:bg-muted"
+                        className="inline-flex h-8 items-center gap-1 rounded-md border border-[#25483b] px-2 text-xs hover:bg-[#16382d]"
                         aria-label={`Copier ${m.number}`}
                       >
                         <Copy className="h-3.5 w-3.5" />
                         {copied === m.number ? "Copié" : "Copier"}
                       </button>
                     </div>
-                    <p className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">
+                    <p className="mt-4 text-xs uppercase tracking-widest text-[#a8bdb3]">
                       Bénéficiaire
                     </p>
                     <p className="mt-1 text-sm">{m.holder}</p>
