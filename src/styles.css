@@ -29,19 +29,25 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background: #f8fbf9;
+  background: #071b15;
+  --site-bg: #071b15;
+  --site-surface: #0b261d;
+  --site-card: #102f25;
+  --site-text: #edf7f1;
+  --site-muted: #a8bdb3;
+  --site-border: #25483b;
 }
 
 html, body, #root {
   min-height: 100%;
-  background: #f8fbf9;
+  background: #071b15;
 }
 
 body {
   margin: 0;
-  color: #10362b;
+  color: #edf7f1;
 }
 
 ::selection {
@@ -50,13 +56,13 @@ body {
 }
 
 input, textarea, select {
-  background-color: #ffffff;
-  color: #10362b;
-  border-color: #c7d9cf;
+  background-color: #0d2a21;
+  color: #edf7f1;
+  border-color: #315447;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #789087;
+  color: #829a8f;
 }
 
 .container-page {
