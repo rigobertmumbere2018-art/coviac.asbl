@@ -20,13 +20,13 @@ export const Route = createFileRoute("/projets")({
 function ProjectsPage() {
   return (
     <>
-      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
+      <section className="border-b border-[#25483b] bg-[#071b15]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">Projets</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Sur le terrain, aux côtés des communautés.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             Une sélection de projets récents menés par COVIAC dans les provinces
             d'intervention.
           </p>
@@ -38,7 +38,7 @@ function ProjectsPage() {
           {RECENT_PROJECTS.map((p) => (
             <article
               key={p.slug}
-              className="group overflow-hidden rounded-xl border border-border bg-card shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-elev)]"
+              className="group overflow-hidden rounded-xl border border-[#25483b] bg-[#102f25] shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-elev)]"
             >
               <div className="relative aspect-[3/2] overflow-hidden bg-muted">
                 <img
@@ -56,7 +56,7 @@ function ProjectsPage() {
                   {p.province}
                 </div>
                 <h2 className="mt-2 font-serif text-xl leading-snug">{p.title}</h2>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 text-sm leading-relaxed text-[#a8bdb3]">
                   {p.summary}
                 </p>
                 <Link
