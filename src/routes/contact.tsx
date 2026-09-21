@@ -53,13 +53,13 @@ function ContactPage() {
 
   return (
     <>
-      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
+      <section className="border-b border-[#25483b] bg-[#071b15]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">Contact</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Écrivez-nous
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             Nos équipes reviennent vers vous sous quelques jours ouvrables.
           </p>
         </div>
@@ -84,15 +84,15 @@ function ContactPage() {
               value={CONTACT.email}
               href={`mailto:${CONTACT.email}`}
             />
-            <div className="rounded-xl border border-border p-6">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="rounded-xl border border-[#25483b] p-6">
+              <div className="text-xs uppercase tracking-widest text-[#a8bdb3]">
                 Horaires
               </div>
               <div className="mt-2 font-medium">{CONTACT.hours}</div>
             </div>
 
-            <div className="rounded-xl border border-border p-6">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground">
+            <div className="rounded-xl border border-[#25483b] p-6">
+              <div className="text-xs uppercase tracking-widest text-[#a8bdb3]">
                 Réseaux sociaux
               </div>
               <ul className="mt-3 flex flex-wrap gap-3">
@@ -120,7 +120,7 @@ function ContactPage() {
               </ul>
             </div>
 
-            <div className="aspect-video overflow-hidden rounded-xl border border-border">
+            <div className="aspect-video overflow-hidden rounded-xl border border-[#25483b]">
               <iframe
                 title="Localisation COVIAC à Goma"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=29.19%2C-1.72%2C29.28%2C-1.63&layer=mapnik&marker=-1.68%2C29.23"
@@ -132,7 +132,7 @@ function ContactPage() {
 
           <form
             onSubmit={onSubmit}
-            className="md:col-span-7 rounded-2xl border border-border bg-card p-6 md:p-8 shadow-[var(--shadow-card)]"
+            className="md:col-span-7 rounded-2xl border border-[#25483b] bg-[#102f25] p-6 md:p-8 shadow-[var(--shadow-card)]"
           >
             <h2 className="font-serif text-2xl">Formulaire de contact</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -159,7 +159,7 @@ function ContactPage() {
               />
             </div>
             <div className="mt-4">
-              <label className="mb-1.5 block text-sm font-medium text-foreground">
+              <label className="mb-1.5 block text-sm font-medium text-[#edf7f1]">
                 Message
               </label>
               <textarea
@@ -167,7 +167,7 @@ function ContactPage() {
                 rows={6}
                 value={values.message}
                 onChange={(e) => setValues((s) => ({ ...s, message: e.target.value }))}
-                className="w-full rounded-md border border-border bg-background p-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+                className="w-full rounded-md border border-[#25483b] bg-[#071b15] p-3 text-sm outline-none focus:ring-2 focus:ring-ring"
               />
             </div>
             <button
@@ -202,7 +202,7 @@ function ContactItem({
         {icon}
       </div>
       <div>
-        <div className="text-xs uppercase tracking-widest text-muted-foreground">
+        <div className="text-xs uppercase tracking-widest text-[#a8bdb3]">
           {label}
         </div>
         <div className="mt-1 font-medium">{value}</div>
@@ -240,7 +240,7 @@ function Field({
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="h-11 w-full rounded-md border border-border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+        className="h-11 w-full rounded-md border border-[#25483b] bg-[#071b15] px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
       />
     </label>
   );
