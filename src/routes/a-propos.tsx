@@ -23,13 +23,13 @@ export const Route = createFileRoute("/a-propos")({
 function AboutPage() {
   return (
     <>
-      <section className="border-b border-[#dce8e1] bg-[#f8fbf9]">
+      <section className="border-b border-[#25483b] bg-[#071b15]">
         <div className="container-page py-20 md:py-24">
           <p className="eyebrow">À propos</p>
           <h1 className="mt-3 max-w-3xl font-serif text-4xl leading-tight md:text-5xl">
             Une organisation au service des communautés d'Afrique Centrale.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg text-[#a8bdb3]">
             COVIAC — Congo Vision Afrique Centrale — est une organisation
             chrétienne à but non lucratif engagée pour la protection, la paix et le
             développement durable.
@@ -43,7 +43,7 @@ function AboutPage() {
             <p className="eyebrow">Notre histoire</p>
             <h2 className="mt-3 font-serif text-2xl md:text-3xl">Depuis nos débuts</h2>
           </div>
-          <div className="md:col-span-8 space-y-5 text-lg text-foreground/80 leading-relaxed">
+          <div className="md:col-span-8 space-y-5 text-lg text-[#edf7f1]/80 leading-relaxed">
             <p>
               Née d'une conviction simple — nul ne devrait être laissé seul face à
               l'urgence — COVIAC a pris racine dans l'Est de la République
@@ -62,25 +62,25 @@ function AboutPage() {
       <section className="bg-sand">
         <div className="container-page py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-2">
-            <div className="rounded-2xl bg-card border border-border p-8">
+            <div className="rounded-2xl bg-[#102f25] border border-[#25483b] p-8">
               <p className="eyebrow">Notre vision</p>
               <h3 className="mt-3 font-serif text-2xl leading-tight">
                 Des communautés résilientes, autonomes et actrices de leur propre
                 développement.
               </h3>
-              <p className="mt-4 text-muted-foreground leading-relaxed">
+              <p className="mt-4 text-[#a8bdb3] leading-relaxed">
                 Nous croyons en une Afrique Centrale où chaque personne peut vivre
                 dignement, en paix, et participer pleinement à la construction de
                 son avenir.
               </p>
             </div>
-            <div className="rounded-2xl bg-card border border-border p-8">
+            <div className="rounded-2xl bg-[#102f25] border border-[#25483b] p-8">
               <p className="eyebrow">Notre mission</p>
               <h3 className="mt-3 font-serif text-2xl leading-tight">
                 Protéger, accompagner et renforcer les capacités des communautés
                 vulnérables.
               </h3>
-              <p className="mt-4 text-muted-foreground leading-relaxed">
+              <p className="mt-4 text-[#a8bdb3] leading-relaxed">
                 À travers des interventions humanitaires d'urgence et des programmes
                 de développement durable, nous plaçons la personne au centre de nos
                 actions.
@@ -97,10 +97,10 @@ function AboutPage() {
         </h2>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {VALUES.map((v, i) => (
-            <div key={v.title} className="rounded-xl border border-border p-6">
+            <div key={v.title} className="rounded-xl border border-[#25483b] p-6">
               <div className="font-serif text-4xl text-primary">0{i + 1}</div>
               <h3 className="mt-4 font-serif text-lg">{v.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+              <p className="mt-2 text-sm text-[#a8bdb3] leading-relaxed">
                 {v.text}
               </p>
             </div>
@@ -108,7 +108,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-surface border-y border-border">
+      <section className="bg-surface border-y border-[#25483b]">
         <div className="container-page py-16 md:py-20">
           <div className="grid gap-12 md:grid-cols-12">
             <div className="md:col-span-4">
@@ -146,9 +146,9 @@ function AboutPage() {
               d: "Coordonne les programmes, les équipes terrain et les partenariats.",
             },
           ].map((b) => (
-            <div key={b.t} className="rounded-xl border border-border p-6">
+            <div key={b.t} className="rounded-xl border border-[#25483b] p-6">
               <h3 className="font-serif text-lg">{b.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+              <p className="mt-2 text-sm text-[#a8bdb3] leading-relaxed">
                 {b.d}
               </p>
             </div>
